@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aakash Gharti Chhetri</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="welcome-text">
+            <span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span> 
+            <span>t</span><span>o</span> 
+            <span>M</span><span>y</span> 
+            <span>W</span><span>e</span><span>b</span><span>p</span><span>a</span><span>g</span><span>e</span>
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" class="nav-button" aria-haspopup="true" aria-expanded="false">Course</a>
+                    <ul class="dropdown">
+                        <li><a href="https://gaia.cs.umass.edu/kurose_ross/eighth.php" target="_blank" class="dropdown-button">Kurose and Ross</a></li>
+                        <li><a href="https://www.w3schools.com" target="_blank" class="dropdown-button">W3Schools</a></li>
+                        <li><a href="https://www.geeksforgeeks.org/web-development/" target="_blank" class="dropdown-button">GeeksforGeeks</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav-button" aria-haspopup="true" aria-expanded="false">Browser</a>
+                    <ul class="dropdown">
+                        <li><a href="#" onclick="showNavigator()" class="dropdown-button">Navigator</a></li>
+                        <li><a href="#" onclick="showWindow()" class="dropdown-button">Window</a></li>
+                        <li><a href="#" onclick="showScreen()" class="dropdown-button">Screen</a></li>
+                        <li><a href="#" onclick="showLocation()" class="dropdown-button">Location</a></li>
+                        <li><a href="#" onclick="showGeolocation()" class="dropdown-button">Geolocation</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav-button" aria-haspopup="true" aria-expanded="false">About</a>
+                    <ul class="dropdown">
+                        <li><a href="#developer-info" class="dropdown-button">Developer Info</a></li>
+                        <li><a href="#contact-me" class="dropdown-button">Contact Me</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="developer-info">
+            <h2>About Me</h2>
+            <p>Hello! I'm Aakash Gharti Chhetri, a dedicated and ambitious student at CUNY Queens College with a passion for technology, research, and community service. My journey in the tech world is driven by curiosity and a commitment to making a positive impact. Here’s a glimpse into my experiences and achievements:</p>
+            <ul>
+                <li><strong>Project Alpaca Participant:</strong> Engaged in innovative research to solve global challenges, enhancing my problem-solving skills and technological insights.</li>
+                <li><strong>QSTEM Research Academy Student:</strong> Conducting scientific research, deepening my understanding of STEM, and developing strong analytical skills.</li>
+                <li><strong>BNY Mellon Scholar '23, '24:</strong> Awarded for academic excellence and leadership, gaining access to professional networks and resources.</li>
+                <li><strong>Red Hawk CSE Club Member:</strong> Active in technical workshops and hackathons, improving programming skills and teamwork.</li>
+                <li><strong>ASAP Scholar:</strong> Benefiting from academic advising and financial support, focused on achieving educational goals.</li>
+                <li><strong>Queens College Ambassador 'NRNA':</strong> Representing Nepali students, promoting cultural exchange, and supporting community initiatives.</li>
+                <li><strong>General-Secretary at Rolpa America Samaj:</strong> Coordinating community events and managing communications, contributing to the welfare of the Rolpa community in America.</li>
+            </ul>
+            <p>Beyond my academic and extracurricular activities, I am an avid learner who loves exploring new technologies and methodologies. I am committed to using my skills and knowledge to bring innovative solutions to real-world problems, bridging the gap between technology and human needs. Thank you for visiting my webpage, and I look forward to connecting with like-minded individuals and organizations.</p>
+        </section>
+
+        <section id="contact-me">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send</button>
+            </form>
+            <div class="social-links">
+                <h3>Follow Me</h3>
+                <a href="https://www.facebook.com/aakashghartichhetri/" target="_blank">Facebook</a> |
+                <a href="https://www.instagram.com/aakash_gharti_chhetri/" target="_blank">Instagram</a> |
+                <a href="https://www.linkedin.com/in/aakash-gharti-chhetri-8342111b9/" target="_blank">LinkedIn</a>
+            </div>
+        </section>
+
+        <section id="browser-info">
+            <h2>Browser Information</h2>
+            <div id="info"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aakash Gharti Chhetri. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
